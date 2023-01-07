@@ -1,0 +1,275 @@
+/*font monserrat*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+section {
+  padding: 20px 0;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  background: #ffffff;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+  max-width: 900px;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+  color: #26499a;
+}
+nav ul li a:hover {
+  color: #ffd200;
+  animation: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.logo {
+  color: #26499a;
+  font-weight: 700;
+  font-size: 20px;
+}
+.logo span {
+  color: #ffd200;
+}
+
+label #open,
+label #close {
+  color: #26499a;
+  font-size: 16px;
+  float: right;
+  cursor: pointer;
+  display: none;
+  transition: all ease 0.3s;
+}
+
+#check {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  nav ul {
+    position: absolute;
+    background-color: #26499a;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    right: 20px;
+    width: 150px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    opacity: 0;
+    transition: all ease 0.3s;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  nav ul li a {
+    color: #fff;
+  }
+  label #open {
+    display: block;
+  }
+
+  #check:checked ~ ul {
+    opacity: 1;
+  }
+
+  #check:checked ~ label #close {
+    display: block;
+  }
+
+  #check:checked ~ label #open {
+    display: none;
+  }
+}
+
+section {
+}
+
+#home {
+  align-items: center;
+  padding: 100px 0;
+}
+#home .hero {
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+  margin: auto;
+}
+#home .content {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+}
+#home .content .iner {
+  max-width: 500px;
+  width: 90%;
+}
+#home .content .iner h3 {
+  color: #ffd200;
+}
+#home .content .iner h1 {
+  color: #26499a;
+  font-size: 30px;
+  font-weight: 800;
+}
+#home .content .iner p {
+  margin-top: 5px;
+  color: #4e4e4e;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#home .content .iner .talk button {
+  padding: 10px 20px;
+  background-color: #26499a;
+  border: none;
+  border-radius: 10px;
+}
+#home .content .iner .talk button a {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+  color: #ffd200;
+  font-size: 10px;
+}
+#home .content .iner .talk button:hover {
+  background-color: #ffd200;
+  transition: 0.5s;
+}
+#home .content .iner .talk button a:hover {
+  color: #26499a;
+  transition: 0.5s;
+}
+#home .content .talk {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+#home .content .iner .talk .sosmed {
+  display: flex;
+  align-items: center;
+}
+#home .content .iner .talk .sosmed i {
+  margin-left: 10px;
+  justify-content: center;
+  align-items: center;
+}
+#home .content .iner .talk .sosmed i a {
+}
+#home .content .iner .talk .sosmed i a img {
+  height: 20px;
+}
+
+#about {
+  display: flex;
+  background-color: #26499a;
+  align-items: center;
+  padding: 50px 0;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#about .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+  margin-top: 30px;
+}
+#about .text h1 {
+  color: #fff;
+}
+#about .text p {
+  margin-top: 15px;
+  color: #fff;
+  font-size: 14px;
+}
+#about .text p span {
+  color: #ffd200;
+}
+#about .text button {
+  margin-top: 10px;
+  background-color: #ffd200;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #26499a;
+}
+#about .text button a {
+  text-decoration: none;
+  font-weight: 800;
+}
+
+#about .profile {
+  max-width: 400px;
+}
+#about .profile img {
+  width: 150px;
+  border-radius: 100%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* footer */
+footer {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4e4e4e;
+}
+
+footer p {
+  color: #ffd200;
+  font-weight: bold;
+  font-size: 10px;
+}
+footer p span {
+  color: #fff;
+}
