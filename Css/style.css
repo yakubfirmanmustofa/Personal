@@ -5,9 +5,9 @@
 
   --hue-color: 250;
 
-  --first-color: hsl(var(--hue-color), 69%, 61%);
-  --first-color-second: hsl(var(--hue-color), 69%, 61%);
-  --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+  --first-color: #4b82f8;
+  --first-color-second: #4b82f8;
+  --first-color-alt: #4b82f8;
   --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
   --title-color: hsl(var(--hue-color), 8%, 15%);
   --text-color: hsl(var(--hue-color), 8%, 45%);
@@ -383,7 +383,7 @@ img {
 
 .button-link:hover {
   background-color: transparent;
-  color: #5b0888;
+  color: #4b82f8;
 }
 
 /* about  */
@@ -415,7 +415,7 @@ img {
 .about-info-title {
   font-size: var(--h2-font-size);
   font-weight: var(--font-semi-bold);
-  color: #713abe;
+  color: #4b82f8;
 }
 
 .about-info-name {
@@ -444,15 +444,16 @@ img {
   margin-bottom: 1rem;
   margin-right: 1rem;
   font-size: var(--small-font-size);
-  background: var(--first-color-lighter);
+  background: #4b82f8;
   border-radius: 5px;
   font-weight: 600;
-  color: var(--title-color);
+  color: #fff;
   transition: 0.3s ease;
 }
 
 .skills-name:hover {
-  background-color: var(--first-color-alt);
+  background-color: #fff;
+  color: #4b82f8;
 }
 
 /* qualifi  */
@@ -526,7 +527,7 @@ img {
 }
 
 .qualification-button.qualification-active {
-  color: #5b0888;
+  color: #4b82f8;
 }
 
 /* services  */
